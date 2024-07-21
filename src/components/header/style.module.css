@@ -1,0 +1,223 @@
+
+.headerParent{
+    max-width: 1520px;
+    height: 650px;
+    background-image: url("https://vakulenko.online/images/tild6639-3239-4632-b464-633839353336__main-bg.jpeg");
+    height: 650px;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarLogo{
+    width: 90px;
+    height: 70px;
+}
+.ul{
+   
+    display: flex; 
+    flex-direction: row;
+    gap: 40px;
+
+}
+.li{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    border-width: 1px;
+    border-radius: 30px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-decoration: none;
+    list-style-type: none;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headerMenu{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.headerMenuTitle{
+    color: #ffffff;
+    font-size: 59px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.25;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.headerMenuText{
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+/* form */
+
+.headerForm{
+    opacity: 0.75;
+    border: solid #2e7bff 3px;
+    width: 462px;
+    height: 505px;
+    background-color: black;
+  outline-color: rgba(0, 130, 206, 0.75);
+  outline-style: solid;
+  animation: animateOutline 3s ease infinite;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+ 
+}
+
+@keyframes animateOutline {
+    0% {
+      outline-width: 1px;
+      outline-offset: 0;
+      outline-color: rgba(0, 130, 206, 0);
+    }
+  
+    10% {
+      outline-color: rgba(0, 130, 206, 0.75);
+    }
+  
+    /* The animation finishes at 50% */
+    50% {
+      outline-width: 7px;
+      outline-offset: 4px;
+      outline-color: rgba(0, 130, 206, 0);
+    }
+  
+    100% {
+      outline-width: 7px;
+      outline-offset: 4px;
+      outline-color: rgba(102, 102, 102, 0);
+    }
+  }
+  
+
+.formTitle{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    opacity: 1;
+    max-width: 325px;
+    margin: auto;
+
+}
+
+.formText{
+    max-width: 320px;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.formInput{
+    justify-content: center;
+    width: 320px;
+    font-size: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    margin: 0 auto;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+}
+.formInputPhone {
+    justify-content: center;
+    width: 320px;
+    font-size: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.33;
+    margin: auto;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+  }
+  
+  .intl-tel-input .selected-flag {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .intl-tel-input .selected-flag .iti__flag {
+    margin-right: 8px;
+  }
+  
+  .intl-tel-input .country-list {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 300px; /* Oynani balandligi */
+    overflow-y: auto;
+    width: 320px; /* Oynani kengligi */
+  }
+  
+  .intl-tel-input .country {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .intl-tel-input .country:hover, .intl-tel-input .country.active {
+    background-color: #f0f0f0;
+  }
+
+
+  .formBtn{
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Montserrat;
+    background-color: #2e7bff;
+    padding: 0px 15px;
+    display: block;
+    width: 320px;
+    font-weight: 700;
+    height: 50px;
+    margin: auto  ;
+}
+
