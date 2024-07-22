@@ -1,12 +1,12 @@
 
 .headerParent{
     max-width: 1520px;
-    height: 650px;
+    height: auto;
     background-image: url("https://vakulenko.online/images/tild6639-3239-4632-b464-633839353336__main-bg.jpeg");
-    height: 650px;
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 30px;
 }
 .container{
     max-width: 1440px;
@@ -17,34 +17,38 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height: 100px;
+    padding: 15px;
+    
 }
 .navbarLogo{
     width: 90px;
     height: 70px;
 }
-.ul{
-   
-    display: flex; 
-    flex-direction: row;
-    gap: 40px;
 
+.navbarToggler {
+  border: none; /* Tugma chegara yo'q */
+  background-color: transparent; /* Tugma fon rangi */
 }
-.li{
-    color: #ffffff;
-    font-size: 14px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    line-height: 1.55;
-    font-weight: 700;
-    border-width: 1px;
-    border-radius: 30px;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    text-decoration: none;
-    list-style-type: none;
+
+.navbarTogglerIcon {
+  color: white; /* Ikonka rangi */
+  font-size: 24px; /* Ikonka o'lchami */
 }
+
+.navLink {
+  color: white; /* Link rangi */
+}
+
+.navItemActive .navLink {
+  font-weight: bold; /* Aktiv linkni qalinroq qilib ko'rsatish */
+}
+
+.navbarCollapse {
+  background-color: #333; /* Collapse fon rangi */
+}
+
+
 .header{
     display: flex;
     flex-direction: row;
@@ -221,3 +225,30 @@
     margin: auto  ;
 }
 
+/* responsive */
+/* Media query */
+@media (max-width: 980px) {
+  .header{
+    display: none;
+  }
+  .navbar {
+    padding: 5px;
+    height: 40px; /* Navbar chetlari kichraytirildi */
+  }
+
+  .navbarLogo {
+    height: 30px; /* Logotip balandligi kichraytirildi */
+  }
+
+  .navLink {
+    font-size: 14px; /* Link shrift o'lchami kichraytirildi */
+  }
+
+  .navbarTogglerIcon {
+    font-size: 20px; /* Ikonka o'lchami kichraytirildi */
+  }
+
+  .navbarCollapse {
+    background-color: #444; /* Collapse fon rangi kichik ekranlar uchun o'zgartirildi */
+  }
+}
