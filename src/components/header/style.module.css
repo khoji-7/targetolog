@@ -27,9 +27,10 @@
 }
 
 .navbarToggler {
-  border: none; /* Tugma chegara yo'q */
+  border: 1px solid #2e7bff; /* Tugma chegara yo'q */
   background-color: transparent; /* Tugma fon rangi */
 }
+
 
 .navbarTogglerIcon {
   color: white; /* Ikonka rangi */
@@ -228,16 +229,22 @@
 /* responsive */
 /* Media query */
 @media (max-width: 980px) {
+  .headerParent{
+    height: 50px;
+  }
   .header{
     display: none;
+    
   }
-  .navbar {
-    padding: 5px;
-    height: 40px; /* Navbar chetlari kichraytirildi */
-  }
+ .navbar{
+      height: 40px;
+      padding: 5px;
+
+ }
 
   .navbarLogo {
-    height: 30px; /* Logotip balandligi kichraytirildi */
+    height: 30px; 
+    width: 40px;/* Logotip balandligi kichraytirildi */
   }
 
   .navLink {
