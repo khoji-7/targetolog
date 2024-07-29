@@ -1,0 +1,322 @@
+.resultParent{
+    max-width: 1440px;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+.resultTitle{
+    color: #000000;
+    font-size: 52px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+}
+.resultText{
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.55;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 530px;
+    text-align: center;
+    margin: auto;
+}
+.resultCardParent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #ADE5F9;
+}
+.resultCard{
+     width: 100%;
+     border: solid #2e7bff 3px;
+     height: auto;
+     background-color: #a7a4a4;
+     align-items:flex-start;
+     padding: 20px;
+     justify-content: flex-start;
+}
+.resultCard ul {
+    list-style: none;
+  }
+.resultCardImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.resultCard::after,
+.resultCard img {
+  border-radius: 50%;
+}
+
+.resultCard,
+.resultCardSts {
+  display: flex;
+}
+
+.resultCard {
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  width:700px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+  margin: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.resultCard::before,
+.resultCard::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.resultCard::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  top: -.7rem;
+  left: -.7rem;
+}
+.resultCard::after {
+  height: 15rem;
+  width: 15rem;
+  background-color: #4172f5aa;
+  top: -8rem;
+  right: -8rem;
+  box-shadow: 2rem 6rem 0 -3rem #FFF
+}
+
+.resultCard img {
+  width: 200px;
+  min-width: 80px;
+  box-shadow: 0 0 0 5px #FFF;
+}
+
+.resultCardInfo {
+  margin-left: 1.5rem;
+}
+
+.resultCardName {
+  margin-bottom: 1rem;
+}
+.resultCardName h2 {
+  font-size: 1.3rem;
+}
+.resultCardName h4 {
+  font-size: .8rem;
+  color: #333
+}
+
+.resultCardText {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.resultCardSts {
+  margin-bottom: 1rem;
+}
+.resultCardSts li {
+  min-width: 5rem;
+}
+.resultCardSts li h3 {
+  font-size: .99rem;
+}
+.resultCardSts li h4 {
+  font-size: .75rem;
+}
+
+.resultCardLinks button {
+  font-family: 'Poppins', sans-serif;
+  min-width: 120px;
+  padding: .5rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+.resultCardLinks .resultCardBtnFolow,
+.resultCardLinks .resultCardBtnView:hover {
+  background-color: #222;
+  color: #FFF;
+}
+.resultCardLinks .resultCardBtnView,
+.resultCardLinks .resultCardBtnFolow:hover{
+  background-color: transparent;
+  color: #222;
+}
+
+@media screen and (max-width: 450px) {
+  .resultCard {
+    display: block;
+  }
+  .resultCardInfo {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .resultCardLinks button {
+    min-width: 100px;
+  }
+}
+/* <------------------------------cardd----------------------------> */
+.resultCarddParent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #ADE5F9;
+    align-items: flex-end;
+}
+.resultCardd{
+    width: 100%;
+    border: solid #2e7bff 3px;
+    height: auto;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.resultCardd ul {
+   list-style: none;
+ }
+.resultCarddImg{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+
+.resultCardd::after,
+.resultCardd img {
+ border-radius: 50%;
+}
+
+.resultCardd,
+.resultCarddSts {
+ display: flex;
+}
+
+.resultCardd {
+ padding: 2.5rem 2rem;
+ border-radius: 10px;
+ background-color: rgba(255, 255, 255, .5);
+ width:700px;
+ box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+ margin: 1rem;
+ position: relative;
+ transform-style: preserve-3d;
+ overflow: hidden;
+ display: flex;
+ flex-direction: row-reverse;
+}
+.resultCardd::before,
+.resultCardd::after {
+ content: '';
+ position: absolute;
+ z-index: -1;
+}
+.resultCardd::before {
+ width: 100%;
+ height: 100%;
+ border: 1px solid #FFF;
+ border-radius: 10px;
+ top: -.7rem;
+ right: -.7rem;
+}
+.resultCardd::after {
+ height: 15rem;
+ width: 15rem;
+ background-color: #4172f5aa;
+ top: -8rem;
+ left: -8rem;
+ box-shadow: 0rem 6rem 0 -3rem #FFF
+}
+
+.resultCardd img {
+ width: 200px;
+ min-width: 80px;
+ box-shadow: 0 0 0 5px #FFF;
+}
+
+.resultCarddInfo {
+ margin-left: 4.5rem;
+}
+
+.resultCarddName {
+ margin-bottom: 1rem;
+}
+.resultCarddName h2 {
+ font-size: 1.3rem;
+}
+.resultCarddName h4 {
+ font-size: .8rem;
+ color: #333
+}
+
+.resultCarddText {
+ font-size: .9rem;
+ margin-bottom: 1rem;
+}
+
+.resultCarddSts {
+ margin-bottom: 1rem;
+}
+.resultCarddSts li {
+ min-width: 5rem;
+}
+.resultCarddSts li h3 {
+ font-size: .99rem;
+}
+.resultCarddSts li h4 {
+ font-size: .75rem;
+}
+
+.resultCarddLinks button {
+ font-family: 'Poppins', sans-serif;
+ min-width: 120px;
+ padding: .5rem;
+ border: 1px solid #222;
+ border-radius: 5px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: all .25s linear;
+}
+.resultCarddLinks .resultCarddBtnFolow,
+.resultCardLinks .resultCarddBtnView:hover {
+ background-color: #222;
+ color: #FFF;
+}
+.resultCarddLinks .resultCarddBtnView,
+.resultCarddLinks .resultCarddBtnFolow:hover{
+ background-color: transparent;
+ color: #222;
+}
+
+@media screen and (max-width: 450px) {
+ .resultCard {
+   display: block;
+ }
+ .resultCardInfo {
+   margin-left: 0;
+   margin-top: 1.5rem;
+ }
+ .resultCardLinks button {
+   min-width: 100px;
+ }
+}

@@ -11,7 +11,7 @@ export default function Header() {
     if (inputRef.current) {
       intlTelInput(inputRef.current, {
         separateDialCode: true,
-        initialCountry: "ua",
+        initialCountry: "uz",
       });
     }
   }, []);

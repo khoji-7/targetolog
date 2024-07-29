@@ -29,11 +29,12 @@
 .navbarToggler {
   border: 1px solid #2e7bff; /* Tugma chegara yo'q */
   background-color: transparent; /* Tugma fon rangi */
+  
 }
 
 
 .navbarTogglerIcon {
-  color: white; /* Ikonka rangi */
+  color: rgb(255, 255, 255); /* Ikonka rangi */
   font-size: 24px; /* Ikonka o'lchami */
 }
 
@@ -41,8 +42,9 @@
   color: white; /* Link rangi */
 }
 
-.navItemActive .navLink {
-  font-weight: bold; /* Aktiv linkni qalinroq qilib ko'rsatish */
+.navItemActive{
+  font-weight: bold;
+  /* Aktiv linkni qalinroq qilib ko'rsatish */
 }
 
 .navbarCollapse {
